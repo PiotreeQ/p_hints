@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root {
+    font-size: min(.83333333vw, 1.8009478673vh);
+    transition: font-size .15s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    color: #fff;
+    /* display: none; */
+}
+
+.hint-wrapper {
+    position: absolute;
+    width: fit-content;
+}
+
+.hint-wrapper > h2 {
+    text-align: center;
+    color: #C2F4F9;
+    text-shadow: 0 0 1rem #c2f4f984;
+}
+
+hr {
+    border-color: #C2F4F9;
+    box-shadow: 0 0 .25rem 0 #c2f4f98e;
+}
+
+.hint-container {
+    border: .0625rem solid #c2f4f9ba;
+    background-color: #c2f4f935;
+    box-shadow: 0 0 .25rem 0 #C2F4F9;
+    padding: 1rem;
+    font-weight: 550;
+    max-width: 20rem;
+    width: fit-content;
+    margin-top: 1.25rem;
+    text-align: center;
+    min-width: 12.5rem;
+}
+
+.hint-container > span {
+    max-width: 20rem;
+    width: fit-content;
+    min-width: 12.5rem;
+}
+
+.hint-container font {
+    color: #C2F4F9;
+}
+
+/* POSITIONS AND ANIMATIONS */
+
+.center-left {
+    top: 50%; transform: translateY(-50%);
+    left: 2.5rem;
+}
+
+.center-right {
+    top: 50%; transform: translateY(-50%);
+    right: 2.5rem;
+}
+
+.center-left-in {animation: center-left-in .75s ease}
+.center-left-out {animation: center-left-out .75s ease}
+.center-right-in {animation: center-right-in .75s ease}
+.center-right-out {animation: center-right-out .75s ease}
+
+@keyframes center-left-in {
+    0% {
+        left: -25rem;
+        opacity: 0.0;
+    }
+    100% {
+        left: 2.5rem;
+        opacity: 1.0;
+    }
+}
+
+@keyframes center-left-out {
+    0% {
+        left: 2.5rem;
+        opacity: 1.0;
+    }
+    100% {
+        left: -25rem;
+        opacity: 0.0;
+    }
+}
+
+@keyframes center-right-in {
+    0% {
+        right: -25rem;
+        opacity: 0.0;
+    }
+    100% {
+        right: 2.5rem;
+        opacity: 1.0;
+    }
+}
+
+@keyframes center-right-out {
+    0% {
+        right: 2.5rem;
+        opacity: 1.0;
+    }
+    100% {
+        right: -25rem;
+        opacity: 0.0;
+    }
+}
